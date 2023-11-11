@@ -119,7 +119,7 @@ def mainGame(W=np.zeros((4,1))):
             upcoming_pipe=0
 
         X[0] = upperPipes[upcoming_pipe]['x']-playerx-GAME_SPRITES['player'].get_width()    # The horizontal distance of the closest pipe
-        X[1] = upperPipes[upcoming_pipe]['y']-SCREENHEIGHT/6-playery                        # The vertical distance of the closest pipe
+        X[1] = upperPipes[upcoming_pipe]['y']-SCREENHEIGHT/6                                # The vertical position of the closest pipe
         X[2] = playery                                                                      # The vertical position of the player
         X[3] = playerVelY                                                                   # The players vertical velocity
         
